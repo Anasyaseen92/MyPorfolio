@@ -129,7 +129,7 @@ const App = () => {
             <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
               {/*<span className="text-4xl font-bold">AS</span> */}
               <img
-                src="https://drive.google.com/file/d/1SNHQNHQGilLcxuDKLhtxx5oEt9Kq7rmc/view?usp=drive_link"
+                src="https://drive.google.com/uc?id=1SNHQNHQGilLcxuDKLhtxx5oEt9Kq7rmc"
                 className="object-cover w-full h-full rounded-full"
               />
             </div>
