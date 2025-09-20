@@ -13,8 +13,9 @@
         'Integrated Stripe & PayPal payments',
         'Role-based authentication with JWT'
       ],
-      tech: ['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Stripe', 'PayPal'],
-      link: '#',
+      tech: ['React.js', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Stripe', 'PayPal'],
+      link: 'https://frontend-multivendor.netlify.app/',
+      sourceCodeLink: 'https://github.com/alishair7071/Multivendor',
       gradient: 'from-blue-600 to-purple-600'
     },
     {
@@ -28,7 +29,8 @@
         'RESTful APIs with JWT authentication'
       ],
       tech: ['React', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
-      link: '#',
+      link: 'https://mern-estate-frontend.netlify.app/',
+      sourceCodeLink: 'https://github.com/alishair7071/real-estate',
       gradient: 'from-green-600 to-teal-600'
     },
     {
@@ -42,7 +44,8 @@
         'RESTful APIs with MongoDB'
       ],
       tech: ['React', 'Redux Toolkit', 'Material UI', 'Node.js', 'Express', 'MongoDB'],
-      link: '#',
+      link: 'https://sociopedia-front-end.netlify.app/',
+      sourceCodeLink: 'https://github.com/alishair7071/Sociopedia',
       gradient: 'from-pink-600 to-red-600'
     }
   ];

@@ -29,7 +29,7 @@ const Projects = () => {
                     <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                     <p className="text-slate-300 mb-4">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
-                      {project.tech.slice(0, 4).map((tech) => (
+                      {project.tech.map((tech) => (
                         <span
                           key={tech}
                           className="bg-slate-700 px-3 py-1 rounded-full text-sm"
@@ -37,11 +37,6 @@ const Projects = () => {
                           {tech}
                         </span>
                       ))}
-                      {project.tech.length > 4 && (
-                        <span className="bg-slate-700 px-3 py-1 rounded-full text-sm">
-                          +{project.tech.length - 4} more
-                        </span>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -66,7 +61,7 @@ const Projects = () => {
                     View Project
                   </a>
                   <a
-                    href="#"
+                    href={project.sourceCodeLink}
                     className="flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-4 py-2 rounded-lg transition-colors"
                   >
                     <Github size={16} />
