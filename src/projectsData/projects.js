@@ -16,6 +16,7 @@
       tech: ['React.js', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Stripe', 'PayPal'],
       link: 'https://frontend-multivendor.netlify.app/',
       sourceCodeLink: 'https://github.com/alishair7071/Multivendor',
+      readmeLink: 'https://github.com/alishair7071/Multivendor/blob/main/README.md',
       gradient: 'from-blue-600 to-purple-600'
     },
     {
@@ -31,6 +32,7 @@
       tech: ['React', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
       link: 'https://mern-estate-frontend.netlify.app/',
       sourceCodeLink: 'https://github.com/alishair7071/real-estate',
+      readmeLink: 'https://github.com/alishair7071/real-estate/blob/main/README.md',
       gradient: 'from-green-600 to-teal-600'
     },
     {
@@ -46,6 +48,7 @@
       tech: ['React', 'Redux Toolkit', 'Material UI', 'Node.js', 'Express', 'MongoDB'],
       link: 'https://sociopedia-front-end.netlify.app/',
       sourceCodeLink: 'https://github.com/alishair7071/Sociopedia',
+      readmeLink: 'https://github.com/alishair7071/Sociopedia/blob/main/README.md',
       gradient: 'from-pink-600 to-red-600'
     }
   ];

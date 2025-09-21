@@ -1,6 +1,20 @@
 import React from "react";
-import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Menu, X, ChevronDown, Code, Database, Smartphone, Globe } from 'lucide-react';
-import projects from "../projectsData/projects"
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  ExternalLink,
+  Menu,
+  X,
+  ChevronDown,
+  Code,
+  Database,
+  Smartphone,
+  Globe,
+} from "lucide-react";
+import projects from "../projectsData/projects";
 
 const Projects = () => {
   return (
@@ -66,6 +80,13 @@ const Projects = () => {
                   >
                     <Github size={16} />
                     Source Code
+                  </a>
+                  <a
+                    href={project.readmeLink}
+                    className="flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-4 py-2 rounded-lg transition-colors"
+                  >
+                    <FileText size={16} />
+                    Project Details
                   </a>
                 </div>
               </div>
