@@ -13,6 +13,7 @@ import {
   Database,
   Smartphone,
   Globe,
+  FileText,
 } from "lucide-react";
 import projects from "../projectsData/projects";
 
