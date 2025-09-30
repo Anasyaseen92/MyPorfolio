@@ -21,7 +21,7 @@
     },
     {
       title: 'Real Estate Platform',
-      description: 'A property listing and management platform where individuals can post their estates for sale or rent.',
+      description: 'A property listing and management platform where individuals can post their estates for sale or rent, and buyers can search, filter, and explore available properties.',
       features: [
         'Property posting for sale or rent',
         'Advanced search and filtering',
