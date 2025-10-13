@@ -122,7 +122,7 @@ const App = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center px-4"
+        className="min-h-screen flex items-center mt-10 justify-center px-4"
       >
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
