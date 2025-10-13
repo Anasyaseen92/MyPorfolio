@@ -122,10 +122,10 @@ const App = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center px-4"
+        className="min-h-screen mt-10 flex items-center justify-center px-4"
       >
         <div className="text-center max-w-4xl mx-auto">
-          <div className="mb-8 mt-10">
+          <div className="mb-8">
             <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
               {/*<span className="text-4xl font-bold">AS</span> */}
               <img
