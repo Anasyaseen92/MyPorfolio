@@ -6,6 +6,7 @@ const skills = {
     "HTML",
     "CSS",
     "JavaScript",
+    "TypeScript",
     "Bootstrap",
     "Tailwind CSS"
   ],
@@ -19,8 +20,9 @@ const skills = {
   "Programming & Problem Solving": [
     "Data Structures & Algorithms",
     "Problem Solving",
+    "Java",
     "Debugging",
-    "LeetCode 70+ Problems"
+    "LeetCode 90+ Problems"
   ],
   "Soft Skills": [
     "Communication",

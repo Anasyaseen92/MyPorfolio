@@ -142,15 +142,19 @@ const App = () => {
               Software Engineer
             </p>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-              Passionate BSCS student with expertise in MERN stack and mobile
-              development. Building scalable applications and contributing to
-              open source projects.
+              Full Stack Developer specializing in the MERN stack and Next.js.
+              Skilled in React.js, Node.js, Express.js, MongoDB, and REST APIs
+              with a strong foundation in scalable application development.
+              Currently a 5th-semester BSCS student, open to opportunities in
+              full-stack, frontend, or backend development.
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
-              href="mailto:alishair7071@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
             >
               <Mail size={20} />
@@ -179,7 +183,9 @@ const App = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:alishair7071@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
             >
               <Mail size={24} />
@@ -360,7 +366,9 @@ const App = () => {
               <Mail className="text-blue-400 mx-auto mb-4" size={32} />
               <h3 className="text-lg font-semibold mb-2">Email</h3>
               <a
-                href="mailto:alishair7071@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-300 hover:text-blue-400 transition-colors"
               >
                 alishair7071@gmail.com
@@ -399,7 +407,9 @@ const App = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:alishair7071@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 p-4 rounded-lg transition-colors"
             >
               <Mail size={24} />
