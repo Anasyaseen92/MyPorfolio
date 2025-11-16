@@ -172,12 +172,16 @@ const App = () => {
           <div className="flex justify-center space-x-6">
             <a
               href="https://github.com/alishair7071"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
             >
               <Github size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/swe-ali-shair/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
             >
               <Linkedin size={24} />
@@ -396,12 +400,16 @@ const App = () => {
           <div className="flex justify-center space-x-6">
             <a
               href="https://github.com/alishair7071"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-slate-800 p-4 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors"
             >
               <Github size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/swe-ali-shair/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-slate-800 p-4 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors"
             >
               <Linkedin size={24} />
