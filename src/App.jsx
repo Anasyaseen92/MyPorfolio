@@ -23,6 +23,7 @@ import {
   MessageSquare,
   Clock,
   Briefcase,
+  Download,
 } from "lucide-react";
 import skills from "./skillsData/skills";
 import Projects from "./components/Projects";
@@ -190,6 +191,14 @@ const App = () => {
                 View Projects
                 <ExternalLink size={20} />
               </button>
+              <a
+                href="/resume.pdf"
+                download="Ali_Shair_Resume.pdf"
+                className="flex items-center gap-2 border border-blue-600 text-blue-400 hover:bg-blue-600/10 px-6 py-3 rounded-lg transition-colors"
+              >
+                <Download size={20} />
+                Download Resume
+              </a>
             </div>
 
             <div className="flex justify-center space-x-6">
