@@ -18,6 +18,10 @@ import {
   Server,
   CreditCard,
   Brain,
+  Cloud,
+  Link,
+  MessageSquare,
+  Clock,
 } from "lucide-react";
 import skills from "./skillsData/skills";
 import Projects from "./components/Projects";
@@ -91,19 +95,17 @@ const App = () => {
                   <button
                     key={section}
                     onClick={() => scrollToSection(section)}
-                    className={`capitalize transition-all duration-300 hover:scale-105 relative group ${
-                      activeSection === section
+                    className={`capitalize transition-all duration-300 hover:scale-105 relative group ${activeSection === section
                         ? "text-blue-400"
                         : "text-slate-300 hover:text-white"
-                    }`}
+                      }`}
                   >
                     {section}
                     <span
-                      className={`absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 transform origin-left transition-transform duration-300 ${
-                        activeSection === section
+                      className={`absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 transform origin-left transition-transform duration-300 ${activeSection === section
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
-                      }`}
+                        }`}
                     ></span>
                   </button>
                 )
@@ -326,28 +328,66 @@ const App = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {Object.entries(skills).map(([category, skillList]) => {
                 const icons = {
-                "Programming Languages": (
-                  <Code className="text-yellow-400" size={24} />
-                ),
-                "Frontend Development": (
+                  "Programming Languages": (
+                    <Code className="text-yellow-400" size={24} />
+                  ),
+                  
+                  "Frontend Development": (
                     <Globe className="text-blue-400" size={24} />
                   ),
-                "Backend Development": (
-                  <Server className="text-green-400" size={24} />
-                ),
-                "Databases": (
-                  <Database className="text-emerald-400" size={24} />
+
+                  "Backend & Databases": (
+                    <Database className="text-emerald-400" size={24} />
                   ),
+
                   "Tools & Platforms": (
                     <Settings className="text-gray-400" size={24} />
                   ),
-                "Payments & Integrations": (
-                  <CreditCard className="text-pink-400" size={24} />
-                ),
-                "Computer Science Fundamentals": (
-                  <Brain className="text-purple-400" size={24} />
-                ),
-                "Soft Skills": <Users className="text-pink-400" size={24} />,
+
+                  "Soft Skills": <Users className="text-pink-400" size={24} />,
+                };
+
+                const renderSkillIcon = (skill) => {
+                  const dev = (cls) => <i className={`${cls} text-2xl`}></i>;
+                  const map = {
+                    // Programming Languages
+                    "JavaScript": () => dev("devicon-javascript-plain colored"),
+                    "TypeScript": () => dev("devicon-typescript-plain colored"),
+                    "Java": () => dev("devicon-java-plain colored"),
+                    "C++": () => dev("devicon-cplusplus-plain colored"),
+                    // Frontend
+                    "React.js": () => dev("devicon-react-original colored"),
+                    "Next.js": () => dev("devicon-nextjs-original"),
+                    "Redux Toolkit": () => dev("devicon-redux-original colored"),
+                    "Material UI": () => dev("devicon-materialui-plain colored"),
+                    "HTML": () => dev("devicon-html5-plain colored"),
+                    "CSS": () => dev("devicon-css3-plain colored"),
+                    "Tailwind CSS": () => dev("devicon-tailwindcss-original colored"),
+                    "Bootstrap": () => dev("devicon-bootstrap-plain colored"),
+                    // Backend & DB
+                    "Node.js": () => dev("devicon-nodejs-plain colored"),
+                    "Express.js": () => dev("devicon-express-original"),
+                    "RESTful APIs": () => <Link className="text-blue-400" size={20} />,
+                    "SQL": () => dev("devicon-mysql-plain colored"),
+                    "MongoDB": () => dev("devicon-mongodb-plain colored"),
+                    // Tools & Platforms
+                    "Git & GitHub": () => dev("devicon-git-plain colored"),
+                    "Postman": () => dev("devicon-postman-plain colored"),
+                    "Firebase": () => dev("devicon-firebase-plain colored"),
+                    "Supabase": () => dev("devicon-supabase-plain colored"),
+                    "Cloudinary": () => <Cloud className="text-sky-400" size={20} />,
+                    "Netlify": () => dev("devicon-netlify-plain colored"),
+                    "Vercel": () => dev("devicon-vercel-original"),
+                    "Stripe": () => dev("devicon-stripe-plain colored"),
+                    "PayPal": () => dev("devicon-paypal-plain colored"),
+                    "Socket.io": () => dev("devicon-socketio-original"),
+                    // Soft skills
+                    "Communication": () => <MessageSquare className="text-slate-300" size={20} />,
+                    "Team Collaboration": () => <Users className="text-slate-300" size={20} />,
+                    "Problem Solving": () => <Brain className="text-slate-300" size={20} />,
+                    "Time Management": () => <Clock className="text-slate-300" size={20} />,
+                  };
+                  return map[skill]?.() ?? <Code className="text-slate-400" size={20} />;
                 };
 
                 return (
@@ -361,12 +401,9 @@ const App = () => {
                     </div>
                     <div className="space-y-2">
                       {skillList.map((skill) => (
-                        <div
-                          key={skill}
-                          className="flex items-center justify-between"
-                        >
+                        <div key={skill} className="flex items-center gap-3">
+                          {renderSkillIcon(skill)}
                           <span className="text-slate-300">{skill}</span>
-                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                         </div>
                       ))}
                     </div>
