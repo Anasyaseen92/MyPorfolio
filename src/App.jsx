@@ -372,7 +372,7 @@ const App = () => {
                     "CSS": () => dev("devicon-css3-plain colored"),
                   "Tailwind CSS": () =>
                     img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+                      "https://cdn.simpleicons.org/tailwindcss/38BDF8",
                       "Tailwind CSS"
                     ),
                     "Bootstrap": () => dev("devicon-bootstrap-plain colored"),
@@ -408,12 +408,12 @@ const App = () => {
                     ),
                   "Stripe": () =>
                     img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stripe/stripe-original.svg",
+                      "https://cdn.simpleicons.org/stripe/635BFF",
                       "Stripe"
                     ),
                   "PayPal": () =>
                     img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/paypal/paypal-original.svg",
+                      "https://cdn.simpleicons.org/paypal/003087",
                       "PayPal"
                     ),
                   "Socket.io": () => dev("devicon-socketio-original"),
