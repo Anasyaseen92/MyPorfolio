@@ -429,19 +429,28 @@ const App = () => {
                 return (
                   <div
                     key={category}
-                    className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors"
+                  className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-slate-600 transition-colors"
                   >
-                    <div className="flex items-center gap-3 mb-4">
+                  <div className="mb-4">
+                    <div className="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-full px-4 py-2 shadow-sm">
                       {icons[category]}
-                      <h3 className="text-xl font-semibold">{category}</h3>
+                      <h3 className="text-sm md:text-base font-semibold tracking-wide">
+                        {category}
+                      </h3>
                     </div>
+                    </div>
+                  <div className="bg-slate-900/50 border border-slate-700 rounded-lg p-4">
                     <div className="space-y-2">
                       {skillList.map((skill) => (
-                        <div key={skill} className="flex items-center gap-3">
+                        <div
+                          key={skill}
+                          className="flex items-center gap-3 text-slate-300 hover:bg-slate-800/50 rounded-md px-2 py-1 transition-colors"
+                        >
                           {renderSkillIcon(skill)}
-                          <span className="text-slate-300">{skill}</span>
+                          <span>{skill}</span>
                         </div>
                       ))}
+                    </div>
                     </div>
                   </div>
                 );
