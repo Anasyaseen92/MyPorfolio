@@ -15,6 +15,9 @@ import {
   Globe,
   Users,
   Settings,
+  Server,
+  CreditCard,
+  Brain,
 } from "lucide-react";
 import skills from "./skillsData/skills";
 import Projects from "./components/Projects";
@@ -323,19 +326,28 @@ const App = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {Object.entries(skills).map(([category, skillList]) => {
                 const icons = {
-                  "Frontend Development": (
+                "Programming Languages": (
+                  <Code className="text-yellow-400" size={24} />
+                ),
+                "Frontend Development": (
                     <Globe className="text-blue-400" size={24} />
                   ),
-                  "Backend & Databases": (
-                    <Database className="text-green-400" size={24} />
+                "Backend Development": (
+                  <Server className="text-green-400" size={24} />
+                ),
+                "Databases": (
+                  <Database className="text-emerald-400" size={24} />
                   ),
-                  "Programming & Problem Solving": (
-                    <Code className="text-yellow-400" size={24} />
-                  ),
-                  "Soft Skills": <Users className="text-pink-400" size={24} />,
                   "Tools & Platforms": (
                     <Settings className="text-gray-400" size={24} />
                   ),
+                "Payments & Integrations": (
+                  <CreditCard className="text-pink-400" size={24} />
+                ),
+                "Computer Science Fundamentals": (
+                  <Brain className="text-purple-400" size={24} />
+                ),
+                "Soft Skills": <Users className="text-pink-400" size={24} />,
                 };
 
                 return (

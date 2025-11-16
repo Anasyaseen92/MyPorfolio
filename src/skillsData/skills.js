@@ -1,33 +1,27 @@
 const skills = {
-  "Frontend Development": [
-    "ReactJS",
-    "Next.js",
-    "React Redux",
-    "HTML",
-    "CSS",
+  "Programming Languages": [
     "JavaScript",
     "TypeScript",
-    "Bootstrap",
-    "Tailwind CSS"
+    "Java",
+    "C++"
   ],
-  "Backend & Databases": [
+  "Frontend Development": [
+    "React.js",
+    "Next.js",
+    "Redux Toolkit",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Bootstrap"
+  ],
+  "Backend Development": [
     "Node.js",
     "Express.js",
+    "RESTful APIs"
+  ],
+  "Databases": [
     "MongoDB",
-    "SQL",
-    "RESTful API"
-  ],
-  "Programming & Problem Solving": [
-    "Data Structures & Algorithms",
-    "Problem Solving",
-    "Java",
-    "Debugging",
-    "LeetCode 90+ Problems"
-  ],
-  "Soft Skills": [
-    "Communication",
-    "Team Collaboration",
-    "Time Management"
+    "SQL"
   ],
   "Tools & Platforms": [
     "Git & GitHub",
@@ -36,9 +30,22 @@ const skills = {
     "Supabase",
     "Cloudinary",
     "Netlify",
-    "Vercel",
-    "PayPal",
-    "Stripe"
+    "Vercel"
+  ],
+  "Payments & Integrations": [
+    "Stripe",
+    "PayPal"
+  ],
+  "Computer Science Fundamentals": [
+    "Data Structures & Algorithms",
+    "Problem Solving",
+    "Debugging",
+    "LeetCode 100+ Problems"
+  ],
+  "Soft Skills": [
+    "Communication",
+    "Team Collaboration",
+    "Time Management"
   ]
 };
 
