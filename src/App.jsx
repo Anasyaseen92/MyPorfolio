@@ -347,9 +347,17 @@ const App = () => {
                   "Soft Skills": <Users className="text-pink-400" size={24} />,
                 };
 
-                const renderSkillIcon = (skill) => {
-                  const dev = (cls) => <i className={`${cls} text-2xl`}></i>;
-                  const map = {
+              const renderSkillIcon = (skill) => {
+                const dev = (cls) => <i className={`${cls} text-2xl`}></i>;
+                const img = (url, alt) => (
+                  <img
+                    src={url}
+                    alt={alt}
+                    className="h-5 w-5 object-contain"
+                    loading="lazy"
+                  />
+                );
+                const map = {
                     // Programming Languages
                     "JavaScript": () => dev("devicon-javascript-plain colored"),
                     "TypeScript": () => dev("devicon-typescript-plain colored"),
@@ -362,7 +370,11 @@ const App = () => {
                     "Material UI": () => dev("devicon-materialui-plain colored"),
                     "HTML": () => dev("devicon-html5-plain colored"),
                     "CSS": () => dev("devicon-css3-plain colored"),
-                    "Tailwind CSS": () => dev("devicon-tailwindcss-original colored"),
+                  "Tailwind CSS": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+                      "Tailwind CSS"
+                    ),
                     "Bootstrap": () => dev("devicon-bootstrap-plain colored"),
                     // Backend & DB
                     "Node.js": () => dev("devicon-nodejs-plain colored"),
@@ -372,15 +384,39 @@ const App = () => {
                     "MongoDB": () => dev("devicon-mongodb-plain colored"),
                     // Tools & Platforms
                     "Git & GitHub": () => dev("devicon-git-plain colored"),
-                    "Postman": () => dev("devicon-postman-plain colored"),
+                  "Postman": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg",
+                      "Postman"
+                    ),
                     "Firebase": () => dev("devicon-firebase-plain colored"),
-                    "Supabase": () => dev("devicon-supabase-plain colored"),
-                    "Cloudinary": () => <Cloud className="text-sky-400" size={20} />,
-                    "Netlify": () => dev("devicon-netlify-plain colored"),
-                    "Vercel": () => dev("devicon-vercel-original"),
-                    "Stripe": () => dev("devicon-stripe-plain colored"),
-                    "PayPal": () => dev("devicon-paypal-plain colored"),
-                    "Socket.io": () => dev("devicon-socketio-original"),
+                  "Supabase": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+                      "Supabase"
+                    ),
+                  "Cloudinary": () => <Cloud className="text-sky-400" size={20} />,
+                  "Netlify": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+                      "Netlify"
+                    ),
+                  "Vercel": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+                      "Vercel"
+                    ),
+                  "Stripe": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stripe/stripe-original.svg",
+                      "Stripe"
+                    ),
+                  "PayPal": () =>
+                    img(
+                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/paypal/paypal-original.svg",
+                      "PayPal"
+                    ),
+                  "Socket.io": () => dev("devicon-socketio-original"),
                     // Soft skills
                     "Communication": () => <MessageSquare className="text-slate-300" size={20} />,
                     "Team Collaboration": () => <Users className="text-slate-300" size={20} />,
