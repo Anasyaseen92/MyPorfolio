@@ -22,6 +22,7 @@ import {
   Link,
   MessageSquare,
   Clock,
+  Briefcase,
 } from "lucide-react";
 import skills from "./skillsData/skills";
 import Projects from "./components/Projects";
@@ -34,7 +35,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects", "contact"];
+      const sections = ["home", "about", "skills", "experience", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
@@ -90,7 +91,7 @@ const App = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {["home", "about", "skills", "projects", "contact"].map(
+              {["home", "about", "skills", "experience", "projects", "contact"].map(
                 (section) => (
                   <button
                     key={section}
@@ -124,7 +125,7 @@ const App = () => {
           {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden pb-4">
-              {["home", "about", "skills", "projects", "contact"].map(
+              {["home", "about", "skills", "experience", "projects", "contact"].map(
                 (section) => (
                   <button
                     key={section}
@@ -455,6 +456,35 @@ const App = () => {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="py-20 px-4 scroll-mt-24 md:scroll-mt-28">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-16">
+              Professional{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Experience
+              </span>
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-start gap-3">
+                    <Briefcase className="text-blue-400 mt-1 flex-shrink-0" size={22} />
+                    <div>
+                      <h3 className="text-xl font-semibold">AI Reasoning Engineer</h3>
+                      <p className="text-slate-300">Turing</p>
+                    </div>
+                  </div>
+                  <div className="text-slate-400 text-sm whitespace-nowrap">
+                    Oct 2025 — Present
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
