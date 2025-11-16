@@ -9,19 +9,19 @@ const skills = {
     "React.js",
     "Next.js",
     "Redux Toolkit",
+    "Material UI",
     "HTML",
     "CSS",
     "Tailwind CSS",
     "Bootstrap"
   ],
-  "Backend Development": [
+  "Backend & Databases": [
     "Node.js",
     "Express.js",
-    "RESTful APIs"
-  ],
-  "Databases": [
-    "MongoDB",
-    "SQL"
+    "RESTful APIs",
+    "Socket.io",
+    "SQL",
+    "MongoDB"
   ],
   "Tools & Platforms": [
     "Git & GitHub",
@@ -30,9 +30,7 @@ const skills = {
     "Supabase",
     "Cloudinary",
     "Netlify",
-    "Vercel"
-  ],
-  "Payments & Integrations": [
+    "Vercel",
     "Stripe",
     "PayPal"
   ],
