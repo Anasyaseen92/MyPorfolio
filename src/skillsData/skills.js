@@ -36,15 +36,10 @@ const skills = {
     "Stripe",
     "PayPal"
   ],
-  "Computer Science Fundamentals": [
-    "Data Structures & Algorithms",
-    "Problem Solving",
-    "Debugging",
-    "LeetCode 100+ Problems"
-  ],
   "Soft Skills": [
     "Communication",
     "Team Collaboration",
+    "Problem Solving",
     "Time Management"
   ]
 };
