@@ -78,15 +78,6 @@ const Projects = () => {
                     <ExternalLink size={16} />
                     Visit Live
                   </a>
-                  <a
-                    href={project.sourceCodeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-4 py-2 rounded-lg transition-colors"
-                  >
-                    <Github size={16} />
-                    Source Code
-                  </a>
                   <RouterLink
                     to={`/projects/${project.slug}`}
                     className="flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-4 py-2 rounded-lg transition-colors"

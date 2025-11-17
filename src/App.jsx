@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   Github,
   Linkedin,
@@ -33,6 +34,12 @@ const App = () => {
   const [activeSection, setActiveSection] = useState("home");
   const navRef = useRef(null);
   const [navHeight, setNavHeight] = useState(0);
+  const [contactName, setContactName] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactSubject, setContactSubject] = useState("");
+  const [contactMessage, setContactMessage] = useState("");
+  const [isSending, setIsSending] = useState(false);
+  const [sendStatus, setSendStatus] = useState({ type: "", message: "" });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -545,6 +552,122 @@ const App = () => {
                 <h3 className="text-lg font-semibold mb-2">Location</h3>
                 <p className="text-slate-300">Lahore, Punjab, Pakistan</p>
               </div>
+            </div>
+
+            <div className="bg-slate-800 p-6 md:p-8 rounded-lg border border-slate-700 mb-12 text-left max-w-3xl mx-auto">
+              <h3 className="text-2xl font-semibold mb-6 text-center">Send me a message</h3>
+              <form
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  setSendStatus({ type: "", message: "" });
+                  if (!contactName || !contactEmail || !contactSubject || !contactMessage) {
+                    setSendStatus({ type: "error", message: "Please fill out all fields before sending." });
+                    return;
+                  }
+                  try {
+                    setIsSending(true);
+                    await emailjs.send(
+                      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                      {
+                        from_name: contactName,
+                        from_email: contactEmail,
+                        subject: contactSubject,
+                        message: contactMessage,
+                      },
+                      { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
+                    );
+                    setSendStatus({ type: "success", message: "Message sent successfully. I will get back to you soon!" });
+                    setContactName("");
+                    setContactEmail("");
+                    setContactSubject("");
+                    setContactMessage("");
+                  } catch (err) {
+                    setSendStatus({ type: "error", message: "Failed to send message. Please try again later." });
+                  } finally {
+                    setIsSending(false);
+                  }
+                }}
+                className="space-y-4"
+              >
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-slate-300 mb-2" htmlFor="contact-name">
+                      Name
+                    </label>
+                    <input
+                      id="contact-name"
+                      name="from_name"
+                      type="text"
+                      value={contactName}
+                      onChange={(e) => setContactName(e.target.value)}
+                      placeholder="Your name"
+                      className="w-full bg-slate-900 border border-slate-700 focus:border-slate-600 rounded-lg px-4 py-2 outline-none text-slate-200"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-slate-300 mb-2" htmlFor="contact-email">
+                      Email
+                    </label>
+                    <input
+                      id="contact-email"
+                      name="from_email"
+                      type="email"
+                      value={contactEmail}
+                      onChange={(e) => setContactEmail(e.target.value)}
+                      placeholder="your@email.com"
+                      className="w-full bg-slate-900 border border-slate-700 focus:border-slate-600 rounded-lg px-4 py-2 outline-none text-slate-200"
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-slate-300 mb-2" htmlFor="contact-subject">
+                    Subject
+                  </label>
+                  <input
+                    id="contact-subject"
+                    name="subject"
+                    type="text"
+                    value={contactSubject}
+                    onChange={(e) => setContactSubject(e.target.value)}
+                    placeholder="How can I help?"
+                    className="w-full bg-slate-900 border border-slate-700 focus:border-slate-600 rounded-lg px-4 py-2 outline-none text-slate-200"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-300 mb-2" htmlFor="contact-message">
+                    Message
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    value={contactMessage}
+                    onChange={(e) => setContactMessage(e.target.value)}
+                    placeholder="Write your message..."
+                    className="w-full bg-slate-900 border border-slate-700 focus:border-slate-600 rounded-lg px-4 py-2 outline-none text-slate-200"
+                    required
+                  />
+                </div>
+                {sendStatus.message && (
+                  <div className={`text-center ${sendStatus.type === "success" ? "text-emerald-400" : "text-red-400"}`}>
+                    {sendStatus.message}
+                  </div>
+                )}
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    disabled={isSending}
+                    className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-colors ${isSending ? "bg-blue-900 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"}`}
+                  >
+                    <Mail size={20} />
+                    {isSending ? "Sending..." : "Send Message"}
+                  </button>
+                </div>
+              </form>
             </div>
 
             <div className="flex justify-center space-x-6">
