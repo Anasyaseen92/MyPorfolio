@@ -572,6 +572,7 @@ const App = () => {
                       {
                         from_name: contactName,
                         from_email: contactEmail,
+                        reply_to: contactEmail,
                         subject: contactSubject,
                         message: contactMessage,
                       },
