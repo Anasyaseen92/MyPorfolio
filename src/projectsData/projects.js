@@ -38,6 +38,26 @@ const projects = [
          'Reliable checkout and order lifecycle from payment to delivery',
          'Maintainable codebase with clear separation of concerns'
        ]
+     },
+     personal: {
+       idea: 'I built Shop Nest after noticing repeated client needs around multi-seller storefronts and secure, scalable checkout flows—aiming for a reusable marketplace foundation inspired by platforms like Etsy/Amazon.',
+       challenges: [
+         'Designing clean role-based access for users vs. sellers',
+         'Handling payment webhooks and order lifecycle reliability',
+         'Managing real-time chat without overloading the backend'
+       ],
+       solves: 'It enables small sellers to reach customers quickly with modern UX, streamlined catalog/checkout, and real-time communication, reducing friction for both sides.',
+       implemented: [
+         'Multi-vendor dashboards with coupons and analytics',
+         'Socket.io chat between buyers and sellers',
+         'Stripe & PayPal payments with verification',
+         'Cloudinary media management and robust data models'
+       ],
+       learnings: [
+         'Best practices for webhooks and idempotent operations',
+         'WebSocket patterns and back-pressure considerations',
+         'Scalable filtering/pagination for large catalogs'
+       ]
      }
    },
    {
@@ -74,6 +94,25 @@ const projects = [
          'Simple listing management that non-technical users can operate',
          'Foundation for extensions like saved searches and alerts'
        ]
+     },
+     personal: {
+       idea: 'This started as a way to simplify the property search experience and practice real-world CRUD + search at scale with a clean UI.',
+       challenges: [
+         'Efficient, scalable filters (price/type/location) and pagination',
+         'Reliable media uploads and handling across devices',
+         'Clear UX for complex, multi-field listing forms'
+       ],
+       solves: 'Owners can self-serve listings; users can quickly narrow results with meaningful filters, improving discovery and decision-making.',
+       implemented: [
+         'Listing CRUD with secure JWT-based access',
+         'Debounced search and query param synchronization',
+         'Image handling via cloud storage and client-side compression'
+       ],
+       learnings: [
+         'Query optimization and indexing strategy in MongoDB',
+         'Designing forms for clarity and error prevention',
+         'Tradeoffs between optimistic UI and server authority'
+       ]
      }
    },
    {
@@ -107,6 +146,25 @@ const projects = [
        results: [
          'Smooth content interactions even on mid-range devices',
          'Clear extension points for notifications and real-time features'
+       ]
+     },
+     personal: {
+       idea: 'I wanted to explore social app patterns—newsfeeds, interactions, and relationships—while focusing on performance and clean data modeling.',
+       challenges: [
+         'Modeling relationships for likes/comments without heavy joins',
+         'Keeping feed interactions fast with pagination and caching',
+         'Ensuring UI feels instant with optimistic updates'
+       ],
+       solves: 'Creates a lightweight space for sharing and discussion with low friction interactions and clean UX.',
+       implemented: [
+         'Posts, likes, comments, profiles, and connections',
+         'Material UI-based, composable components',
+         'Paginated APIs designed for smooth infinite scrolling'
+       ],
+       learnings: [
+         'State normalization and caching for responsive feeds',
+         'Balancing optimistic UI with consistent server state',
+         'Planning for real-time notifications and moderation hooks'
        ]
      }
    }
