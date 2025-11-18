@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link as RouterLink } from "react-router-dom";
 import { ExternalLink, Github, ArrowLeft, FileText } from "lucide-react";
 import projects from "../projectsData/projects";
@@ -6,6 +6,11 @@ import projects from "../projectsData/projects";
 const CaseStudy = () => {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+
+  useEffect(() => {
+    // Ensure the page loads at the top when navigating here
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!project) {
     return (
