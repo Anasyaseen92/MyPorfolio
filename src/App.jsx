@@ -105,15 +105,15 @@ const App = () => {
                     key={section}
                     onClick={() => scrollToSection(section)}
                     className={`capitalize transition-all duration-300 hover:scale-105 relative group ${activeSection === section
-                        ? "text-blue-400"
-                        : "text-slate-300 hover:text-white"
+                      ? "text-blue-400"
+                      : "text-slate-300 hover:text-white"
                       }`}
                   >
                     {section}
                     <span
                       className={`absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 transform origin-left transition-transform duration-300 ${activeSection === section
-                          ? "scale-x-100"
-                          : "scale-x-0 group-hover:scale-x-100"
+                        ? "scale-x-100"
+                        : "scale-x-0 group-hover:scale-x-100"
                         }`}
                     ></span>
                   </button>
@@ -173,19 +173,17 @@ const App = () => {
                 Software Engineer
               </p>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-                Full Stack Developer specializing in the MERN stack and Next.js.
-                Skilled in React.js, Node.js, Express.js, MongoDB, and REST APIs
-                with a strong foundation in scalable application development.
-                Currently a 5th-semester BSCS student, open to opportunities in
-                full-stack, frontend, or backend development.
+                Full-stack engineer specializing in the MERN stack and Next.js. I build robust,
+                scalable web applications with React, Node, Express, MongoDB,
+                and REST/real-time APIs, with production experience in authentication,
+                payments (Stripe/PayPal), and performance. I have solved 100+ LeetCode problems,
+                bringing strong data structures and algorithms thinking to system design and implementation.
               </p>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => scrollToSection("contact")}
                 className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
               >
                 <Mail size={20} />
@@ -250,26 +248,16 @@ const App = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">
-                  Full Stack Developer & Computer Science Student
+                  Full Stack Software Engineer
                 </h3>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  I'm a passionate 5th-semester BSCS student at the University of
-                  Education, Lahore, with a strong focus on full-stack
-                  development. My journey in software engineering has led me to
-                  master the MERN stack for creating comprehensive web
-                  applications.
+                  Full‑stack engineer focused on building production‑grade web applications across the MERN stack and Next.js. I design and deliver features end‑to‑end—from clean UX to scalable APIs and data models—optimized for performance and reliability.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  I specialize in building scalable applications with modern
-                  technologies like React.js, Node.js, Express.js, and MongoDB. My
-                  experience extends to mobile development, real-time
-                  communication with Socket.io, and payment integrations with
-                  Stripe and PayPal.
+                  My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I’ve integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching.
                 </p>
                 <p className="text-slate-300 mb-8 leading-relaxed">
-                  I'm passionate about contributing to open source projects and am
-                  actively seeking opportunities to apply my skills in dynamic
-                  development environments.
+                  I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, and a social app reflect my practical approach. I’ve solved 100+ LeetCode problems, strengthening my data‑structures and algorithms mindset for everyday engineering.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -348,7 +336,7 @@ const App = () => {
                   "Programming Languages": (
                     <Code className="text-yellow-400" size={24} />
                   ),
-                  
+
                   "Frontend Development": (
                     <Globe className="text-blue-400" size={24} />
                   ),
@@ -364,17 +352,17 @@ const App = () => {
                   "Soft Skills": <Users className="text-pink-400" size={24} />,
                 };
 
-              const renderSkillIcon = (skill) => {
-                const dev = (cls) => <i className={`${cls} text-2xl`}></i>;
-                const img = (url, alt) => (
-                  <img
-                    src={url}
-                    alt={alt}
-                    className="h-5 w-5 object-contain"
-                    loading="lazy"
-                  />
-                );
-                const map = {
+                const renderSkillIcon = (skill) => {
+                  const dev = (cls) => <i className={`${cls} text-2xl`}></i>;
+                  const img = (url, alt) => (
+                    <img
+                      src={url}
+                      alt={alt}
+                      className="h-5 w-5 object-contain"
+                      loading="lazy"
+                    />
+                  );
+                  const map = {
                     // Programming Languages
                     "JavaScript": () => dev("devicon-javascript-plain colored"),
                     "TypeScript": () => dev("devicon-typescript-plain colored"),
@@ -387,11 +375,11 @@ const App = () => {
                     "Material UI": () => dev("devicon-materialui-plain colored"),
                     "HTML": () => dev("devicon-html5-plain colored"),
                     "CSS": () => dev("devicon-css3-plain colored"),
-                  "Tailwind CSS": () =>
-                    img(
-                      "https://cdn.simpleicons.org/tailwindcss/38BDF8",
-                      "Tailwind CSS"
-                    ),
+                    "Tailwind CSS": () =>
+                      img(
+                        "https://cdn.simpleicons.org/tailwindcss/38BDF8",
+                        "Tailwind CSS"
+                      ),
                     "Bootstrap": () => dev("devicon-bootstrap-plain colored"),
                     // Backend & DB
                     "Node.js": () => dev("devicon-nodejs-plain colored"),
@@ -401,39 +389,39 @@ const App = () => {
                     "MongoDB": () => dev("devicon-mongodb-plain colored"),
                     // Tools & Platforms
                     "Git & GitHub": () => dev("devicon-git-plain colored"),
-                  "Postman": () =>
-                    img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg",
-                      "Postman"
-                    ),
+                    "Postman": () =>
+                      img(
+                        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg",
+                        "Postman"
+                      ),
                     "Firebase": () => dev("devicon-firebase-plain colored"),
-                  "Supabase": () =>
-                    img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
-                      "Supabase"
-                    ),
-                  "Cloudinary": () => <Cloud className="text-sky-400" size={20} />,
-                  "Netlify": () =>
-                    img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
-                      "Netlify"
-                    ),
-                  "Vercel": () =>
-                    img(
-                      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
-                      "Vercel"
-                    ),
-                  "Stripe": () =>
-                    img(
-                      "https://cdn.simpleicons.org/stripe/635BFF",
-                      "Stripe"
-                    ),
-                  "PayPal": () =>
-                    img(
-                      "https://cdn.simpleicons.org/paypal/003087",
-                      "PayPal"
-                    ),
-                  "Socket.io": () => dev("devicon-socketio-original"),
+                    "Supabase": () =>
+                      img(
+                        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+                        "Supabase"
+                      ),
+                    "Cloudinary": () => <Cloud className="text-sky-400" size={20} />,
+                    "Netlify": () =>
+                      img(
+                        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+                        "Netlify"
+                      ),
+                    "Vercel": () =>
+                      img(
+                        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+                        "Vercel"
+                      ),
+                    "Stripe": () =>
+                      img(
+                        "https://cdn.simpleicons.org/stripe/635BFF",
+                        "Stripe"
+                      ),
+                    "PayPal": () =>
+                      img(
+                        "https://cdn.simpleicons.org/paypal/003087",
+                        "PayPal"
+                      ),
+                    "Socket.io": () => dev("devicon-socketio-original"),
                     // Soft skills
                     "Communication": () => <MessageSquare className="text-slate-300" size={20} />,
                     "Team Collaboration": () => <Users className="text-slate-300" size={20} />,
@@ -446,28 +434,28 @@ const App = () => {
                 return (
                   <div
                     key={category}
-                  className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-slate-600 transition-colors"
+                    className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-slate-600 transition-colors"
                   >
-                  <div className="mb-4">
-                    <div className="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-full px-4 py-2 shadow-sm">
-                      {icons[category]}
-                      <h3 className="text-sm md:text-base font-semibold tracking-wide">
-                        {category}
-                      </h3>
+                    <div className="mb-4">
+                      <div className="inline-flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-full px-4 py-2 shadow-sm">
+                        {icons[category]}
+                        <h3 className="text-sm md:text-base font-semibold tracking-wide">
+                          {category}
+                        </h3>
+                      </div>
                     </div>
-                    </div>
-                  <div className="bg-slate-900/50 border border-slate-700 rounded-lg p-4">
-                    <div className="space-y-2">
-                      {skillList.map((skill) => (
-                        <div
-                          key={skill}
-                          className="flex items-center gap-3 text-slate-300 hover:bg-slate-800/50 rounded-md px-2 py-1 transition-colors"
-                        >
-                          {renderSkillIcon(skill)}
-                          <span>{skill}</span>
-                        </div>
-                      ))}
-                    </div>
+                    <div className="bg-slate-900/50 border border-slate-700 rounded-lg p-4">
+                      <div className="space-y-2">
+                        {skillList.map((skill) => (
+                          <div
+                            key={skill}
+                            className="flex items-center gap-3 text-slate-300 hover:bg-slate-800/50 rounded-md px-2 py-1 transition-colors"
+                          >
+                            {renderSkillIcon(skill)}
+                            <span>{skill}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 );
