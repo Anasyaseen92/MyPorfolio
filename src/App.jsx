@@ -184,14 +184,14 @@ const App = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <a
                 onClick={() => scrollToSection("contact")}
-                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
+                className="cursor-pointer flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
               >
                 <Mail size={20} />
                 Get In Touch
               </a>
               <button
                 onClick={() => scrollToSection("projects")}
-                className="flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-6 py-3 rounded-lg transition-colors"
+                className=" cursor-pointer flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-6 py-3 rounded-lg transition-colors"
               >
                 View Projects
                 <ExternalLink size={20} />
