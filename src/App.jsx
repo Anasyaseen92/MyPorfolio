@@ -251,10 +251,10 @@ const App = () => {
                   Full Stack Software Engineer
                 </h3>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  Full‑stack engineer focused on building production‑grade web applications across the MERN stack and Next.js. I design and deliver features end‑to‑end—from clean UX to scalable APIs and data models—optimized for performance and reliability.
+                  Full‑stack engineer focused on building production‑grade web applications across the MERN stack and Next.js. I design and deliver features end‑to‑end, from clean UX to scalable APIs and data models, optimized for performance and reliability.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I’ve integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching.
+                  My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching.
                 </p>
                 <p className="text-slate-300 mb-8 leading-relaxed">
                   I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, and a social app reflect my practical approach. I’ve solved 100+ LeetCode problems, strengthening my data‑structures and algorithms mindset for everyday engineering.
