@@ -40,6 +40,7 @@ const App = () => {
   const [contactMessage, setContactMessage] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [sendStatus, setSendStatus] = useState({ type: "", message: "" });
+  const [showResponsibilities, setShowResponsibilities] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -228,7 +229,7 @@ const App = () => {
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" 
                 className="text-slate-400 hover:text-white transition-colors"
               >
                 <Mail size={24} />
@@ -259,7 +260,7 @@ const App = () => {
                   My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  As an AI Reasoning Engineer at @Turing, I design and evaluate reasoning‑centric agents and workflows—building reliable tool‑use, retrieval, and multi‑step planning, writing evals to measure correctness and robustness, and shipping LLM features that are safe, predictable, and production‑ready.
+                  As an AI Reasoning Engineer at @Turing, I design and evaluate reasoning‑centric agents and workflows, building reliable tool‑use, retrieval, and multi‑step planning, writing evals to measure correctness and robustness, and shipping LLM features that are safe, predictable, and production‑ready.
                 </p>
                 <p className="text-slate-300 mb-8 leading-relaxed">
                   I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, and a social app reflect my practical approach. I’ve solved 100+ LeetCode problems, strengthening my data‑structures and algorithms mindset for everyday engineering.
@@ -494,8 +495,36 @@ const App = () => {
                   </div>
                 </div>
                 <p className="text-slate-300 mt-4 leading-relaxed">
-                  I design and evaluate reasoning‑centric agents and tool‑use workflows, build retrieval and multi‑step planning pipelines, write pragmatic evals for correctness and robustness, and ship safe, production‑ready LLM features with monitoring and guardrails.
+                I build reasoning-centric agents, tool-use workflows, and pragmatic evals for reliable, production-ready LLM features.
                 </p>
+                
+                <button
+                  onClick={() => setShowResponsibilities(!showResponsibilities)}
+                  className="mt-4 flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
+                >
+                  {showResponsibilities ? (
+                    <>
+                      <ChevronDown className="rotate-180 transition-transform" size={16} />
+                      Hide Responsibilities
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown className="transition-transform" size={16} />
+                      View Responsibilities
+                    </>
+                  )}
+                </button>
+
+                {showResponsibilities && (
+                  <ul className="mt-4 space-y-2 text-slate-300 list-disc list-inside pl-4">
+                    <li>Trained and evaluated AI reasoning models using advanced competitive programming techniques and optimized C++ solutions.</li>
+                    <li>Designed and implemented algorithmic challenges that strengthened the model's logical reasoning, optimization strategies, and problem-solving depth.</li>
+                    <li>Analyzed model outputs to identify reasoning gaps and developed targeted C++ tasks to improve accuracy, robustness, and generalization.</li>
+                    <li>Utilized Docker-based environments to reliably run, test, and evaluate model training pipelines across consistent setups.</li>
+                    <li>Optimized C++ implementations with a focus on time – space complexity, exposing models to realistic computational constraints.</li>
+                    <li>Collaborated with AI research teams to refine evaluation metrics, improve data quality, and support continuous model improvement.</li>
+                  </ul>
+                )}
               </div>
             </div>
           </div>
