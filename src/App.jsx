@@ -178,6 +178,8 @@ const App = () => {
                 and REST/real-time APIs, with production experience in authentication,
                 payments (Stripe/PayPal), and performance. I have solved 100+ LeetCode problems,
                 bringing strong data structures and algorithms thinking to system design and implementation.
+                As an AI Reasoning Engineer at Turing, I build reasoning-centric agents, tool-use workflows,
+                and pragmatic evals for reliable, production-ready LLM features.
               </p>
             </div>
 
@@ -248,13 +250,16 @@ const App = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">
-                  Full Stack Software Engineer
+                  Full Stack Software Engineer • AI Reasoning Engineer
                 </h3>
                 <p className="text-slate-300 mb-6 leading-relaxed">
                   Full‑stack engineer focused on building production‑grade web applications across the MERN stack and Next.js. I design and deliver features end‑to‑end, from clean UX to scalable APIs and data models, optimized for performance and reliability.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
                   My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching.
+                </p>
+                <p className="text-slate-300 mb-6 leading-relaxed">
+                  As an AI Reasoning Engineer at @Turing, I design and evaluate reasoning‑centric agents and workflows—building reliable tool‑use, retrieval, and multi‑step planning, writing evals to measure correctness and robustness, and shipping LLM features that are safe, predictable, and production‑ready.
                 </p>
                 <p className="text-slate-300 mb-8 leading-relaxed">
                   I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, and a social app reflect my practical approach. I’ve solved 100+ LeetCode problems, strengthening my data‑structures and algorithms mindset for everyday engineering.
@@ -488,6 +493,9 @@ const App = () => {
                     Oct 2025 — Present
                   </div>
                 </div>
+                <p className="text-slate-300 mt-4 leading-relaxed">
+                  I design and evaluate reasoning‑centric agents and tool‑use workflows, build retrieval and multi‑step planning pipelines, write pragmatic evals for correctness and robustness, and ship safe, production‑ready LLM features with monitoring and guardrails.
+                </p>
               </div>
             </div>
           </div>
