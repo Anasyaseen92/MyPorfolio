@@ -69,9 +69,8 @@ const CaseStudy = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
-            <header className="mb-10">
+        <div className="max-w-3xl">
+          <header className="mb-10">
               <h1 className="text-4xl font-bold mb-3">{title}</h1>
               <p className="text-slate-300">{description}</p>
               {Array.isArray(tech) && tech.length > 0 && (
@@ -144,23 +143,6 @@ const CaseStudy = () => {
                 </section>
               )}
             </main>
-          </div>
-
-          <aside className="lg:col-span-1">
-            {Array.isArray(project.technicalDecisions) && project.technicalDecisions.length > 0 && (
-              <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 sticky top-6">
-                <h2 className="text-xl font-semibold mb-4">Technical Decisions</h2>
-                <ul className="space-y-3 text-slate-300 text-sm leading-relaxed">
-                  {project.technicalDecisions.map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="text-slate-500 shrink-0">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </aside>
         </div>
       </div>
     </div>

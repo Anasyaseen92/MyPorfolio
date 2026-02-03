@@ -36,12 +36,7 @@ const projects = [
         'Scalable catalog with filters and server-side pagination',
         'Production-style architecture ready for extensions (notifications, reviews)'
       ]
-    },
-    technicalDecisions: [
-      'Socket.io over polling for real-time chat to keep latency low and backend simple',
-      'Webhook handling for Stripe/PayPal to confirm payments and update order status reliably',
-      'Role-based middleware (customer/seller/admin) for secure API and dashboard access'
-    ]
+    }
   },
   {
     title: 'Real Estate Platform',
@@ -118,11 +113,7 @@ const projects = [
       results: [
         'Smooth content interactions and clear extension points for notifications or real-time features'
       ]
-    },
-    technicalDecisions: [
-      'Normalized Redux state for posts and users to keep the feed performant and cache-friendly',
-      'Paginated APIs for the feed to support infinite scroll without loading everything at once'
-    ]
+    }
   }
 ];
 
