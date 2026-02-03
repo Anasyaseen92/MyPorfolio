@@ -69,15 +69,17 @@ const Projects = () => {
                   ))}
                 </ul>
                 <div className="flex gap-4 pt-4">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
-                  >
-                    <ExternalLink size={16} />
-                    Visit Live
-                  </a>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                      Visit Live
+                    </a>
+                  )}
                   <RouterLink
                     to={`/projects/${project.slug}`}
                     className="flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-4 py-2 rounded-lg transition-colors"

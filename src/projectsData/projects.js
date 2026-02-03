@@ -1,5 +1,44 @@
 const projects = [
   {
+    title: 'LMS',
+    slug: 'lms',
+    description: 'Full-featured Learning Management System with course creation, video streaming, Stripe payments, Q&A, reviews, and real-time admin notifications. Built with Next.js and TypeScript.',
+    features: [
+      'Multi-role access (Admin & users); course creation and content management with video streaming',
+      'Stripe payment processing; enrollment and purchase verification',
+      'Q&A with threaded replies; reviews and star ratings; admin reply to reviews',
+      'Real-time notifications (Socket.io): course purchased, new review, Q&A discussion',
+      'Admin analytics and reporting; dynamic layout (banners, FAQs, categories)',
+      'Redis caching; rate limiting; JWT access/refresh tokens; dark/light theme'
+    ],
+    tech: ['Next.js', 'TypeScript', 'React', 'Redux Toolkit', 'RTK Query', 'NextAuth', 'Tailwind CSS', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'Redis', 'Socket.io', 'Stripe', 'Cloudinary'],
+    link: 'https://lms-client-1ofg.vercel.app/',
+    sourceCodeLink: 'https://github.com/alishair7071/LMS',
+    readmeLink: 'https://github.com/alishair7071/LMS/blob/main/README.md',
+    gradient: 'from-amber-600 to-orange-600',
+    caseStudy: {
+      overview: 'LMS is a full-stack Learning Management System built with Next.js (TypeScript) on the frontend and Node.js/Express (TypeScript) on the backend. It provides RESTful APIs for courses, authentication, enrollment, Stripe payments, content delivery, and analytics. The system supports multi-role users, video-based learning, Q&A, reviews, and real-time admin notifications.',
+      problemSolution: 'Beginner developers need a platform that combines structured courses, hands-on practice, and community interaction. LMS bridges theory and practice with curated lessons, video content, secure payments, and real-time notifications—giving admins visibility into purchases, reviews, and Q&A so they can support learners effectively.',
+      highlights: [
+        'Three-tier architecture: Next.js frontend, Express REST API, MongoDB + Redis + Cloudinary',
+        'Course CRUD with thumbnails, video sections (VDO Cipher), benefits, prerequisites; admin data grid',
+        'Stripe payment flow; enrollment gated by purchase; JWT access/refresh token auth',
+        'Socket.io real-time notifications for admin: course purchased, new review, Q&A activity'
+      ],
+      implementation: [
+        'Frontend: Next.js 13+, React, TypeScript, Redux Toolkit, RTK Query, NextAuth, Tailwind CSS, Material UI, Socket.io client',
+        'Backend: Node.js, Express, TypeScript, Mongoose, MongoDB, Redis (cache), JWT, bcrypt, Stripe, Cloudinary, nodemailer, EJS templates, express-rate-limit',
+        'APIs: /api/v1/user, /api/v1/course, /api/v1/order, /api/v1/notifications, /api/v1/analytics, /api/v1/layout',
+        'Security: CORS, cookie-based tokens, rate limiting (100 req/15 min/IP)'
+      ],
+      results: [
+        'End-to-end flow from course discovery and purchase to video access, Q&A, and reviews',
+        'Admin panel for course management, layout customization, and real-time notification handling',
+        'TypeScript across stack for type safety and maintainability; Redis cache for performance'
+      ]
+    }
+  },
+  {
     title: 'Shop Nest',
     slug: 'shop-nest',
     description: 'Multi-vendor e-commerce marketplace with real-time chat and secure payments. Sellers manage stores and orders; buyers browse, checkout, and message sellers.',
@@ -74,12 +113,7 @@ const projects = [
         'Owners can self-serve listing management without technical knowledge',
         'Solid base for saved searches, alerts, or admin moderation'
       ]
-    },
-    technicalDecisions: [
-      'Supabase Storage for images to avoid overloading the API and to get CDN-backed URLs',
-      'JWT in HTTP-only cookie for auth so the client stays simple and tokens are secure',
-      'Query params for search/filters so results are shareable and back-button friendly'
-    ]
+    }
   },
   {
     title: 'Sociopedia',
