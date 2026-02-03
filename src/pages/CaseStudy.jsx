@@ -8,7 +8,7 @@ const CaseStudy = () => {
   const project = projects.find((p) => p.slug === slug);
 
   useEffect(() => {
-    // Ensure the page loads at the top when navigating here
+    // Ensure the page load at the top when navigating here
     window.scrollTo(0, 0);
   }, []);
 
