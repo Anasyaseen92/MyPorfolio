@@ -175,13 +175,7 @@ const App = () => {
                 Full Stack Engineer
               </p>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-                Full-stack engineer specializing in the MERN stack, Next.js, and React Native. I build robust,
-                scalable web and mobile applications with React, Node, Express, MongoDB,
-                and REST/real-time APIs, with production experience in authentication,
-                payments (Stripe/PayPal), and performance. I actively practice DSA on LeetCode with a strong problem-solving track record
-                and competed in ICPC 2025, advancing to the onsite round. That foundation in data structures and algorithms
-                shapes my system design and implementation. Currently an open source contributor. Previously an AI Reasoning Engineer at Turing,
-                building reasoning-centric agents, tool-use workflows, and pragmatic evals for production-ready LLM features.
+                I am a full-stack engineer. I build web and mobile apps with the MERN stack, Next.js, and React Native. I have worked on real projects from front end to backend and making things run smoothly. I like solving problems and practice DSA on LeetCode; I also competed in ICPC 2025 and made it to the onsite round. Right now I am contributing to open source. Before that I was an AI Reasoning Engineer at Turing, working on agents and tool-use workflows so LLM features could be shipped to production.
               </p>
             </div>
 
@@ -261,10 +255,10 @@ const App = () => {
                   My expertise includes React/Next.js, React Native, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching. I am currently contributing to open source.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  Previously, as an AI Reasoning Engineer at Turing (through Jan 2026), I designed and evaluated reasoning‑centric agents and workflows, building reliable tool‑use, retrieval, and multi‑step planning, and shipping LLM features that are safe, predictable, and production‑ready.
+                  Previously, as an AI Reasoning Engineer at Turing, I designed and evaluated reasoning‑centric agents and workflows, building reliable tool‑use, retrieval, and multi‑step planning, and shipping LLM features that are safe, predictable, and production‑ready.
                 </p>
                 <p className="text-slate-300 mb-8 leading-relaxed">
-                  I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, an LMS, and a social app reflect my practical approach. I actively practice data structures and algorithms on LeetCode with a strong solve count and participated in ICPC 2025, reaching the onsite round—this DSA journey strengthens my problem‑solving and system design in everyday engineering.
+                  I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, an LMS, and a social app reflect my practical approach. I actively practice data structures and algorithms on LeetCode with a strong solve count and participated in ICPC 2025, reaching the onsite round, this DSA journey strengthens my problem‑solving and system design in everyday engineering.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -274,7 +268,7 @@ const App = () => {
                   </div>
                   <div className="flex items-center gap-2 text-slate-300">
                     <Phone size={16} className="text-blue-400" />
-                    03007071587
+                    +923007071587
                   </div>
                 </div>
               </div>
