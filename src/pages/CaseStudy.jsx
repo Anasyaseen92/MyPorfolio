@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, Link as RouterLink } from "react-router-dom";
-import { ExternalLink, Github, ArrowLeft, FileText } from "lucide-react";
+import { ExternalLink, Github, ArrowLeft } from "lucide-react";
 import projects from "../projectsData/projects";
 
 const CaseStudy = () => {
@@ -8,7 +8,6 @@ const CaseStudy = () => {
   const project = projects.find((p) => p.slug === slug);
 
   useEffect(() => {
-    // Ensure the page load at the top when navigating here
     window.scrollTo(0, 0);
   }, []);
 
@@ -94,6 +93,24 @@ const CaseStudy = () => {
                 </section>
               )}
 
+              {caseStudy?.problemSolution && (
+                <section>
+                  <h2 className="text-2xl font-semibold mb-3">Problem & Solution</h2>
+                  <p className="text-slate-300 leading-relaxed">{caseStudy.problemSolution}</p>
+                </section>
+              )}
+
+              {Array.isArray(project.features) && project.features.length > 0 && (
+                <section>
+                  <h2 className="text-2xl font-semibold mb-3">Key Features</h2>
+                  <ul className="list-disc list-inside space-y-2 text-slate-300">
+                    {project.features.map((f) => (
+                      <li key={f}>{f}</li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
               {Array.isArray(caseStudy?.highlights) && caseStudy.highlights.length > 0 && (
                 <section>
                   <h2 className="text-2xl font-semibold mb-3">Highlights</h2>
@@ -126,78 +143,28 @@ const CaseStudy = () => {
                   </ul>
                 </section>
               )}
-
-              {Array.isArray(project.features) && project.features.length > 0 && (
-                <section>
-                  <h2 className="text-2xl font-semibold mb-3">Key Features</h2>
-                  <ul className="list-disc list-inside space-y-2 text-slate-300">
-                    {project.features.map((f) => (
-                      <li key={f}>{f}</li>
-                    ))}
-                  </ul>
-                </section>
-              )}
             </main>
           </div>
 
           <aside className="lg:col-span-1">
-            <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 space-y-6">
-              <h2 className="text-2xl font-semibold">About This Project</h2>
-
-              {project.personal?.idea && (
-                <section>
-                  <h3 className="text-lg font-semibold mb-2">How I got the idea</h3>
-                  <p className="text-slate-300 leading-relaxed">{project.personal.idea}</p>
-                </section>
-              )}
-
-              {Array.isArray(project.personal?.challenges) && project.personal.challenges.length > 0 && (
-                <section>
-                  <h3 className="text-lg font-semibold mb-2">Challenges I faced</h3>
-                  <ul className="list-disc list-inside space-y-2 text-slate-300">
-                    {project.personal.challenges.map((c) => (
-                      <li key={c}>{c}</li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-
-              {project.personal?.solves && (
-                <section>
-                  <h3 className="text-lg font-semibold mb-2">What this project solves</h3>
-                  <p className="text-slate-300 leading-relaxed">{project.personal.solves}</p>
-                </section>
-              )}
-
-              {Array.isArray(project.personal?.implemented) && project.personal.implemented.length > 0 && (
-                <section>
-                  <h3 className="text-lg font-semibold mb-2">What I implemented</h3>
-                  <ul className="list-disc list-inside space-y-2 text-slate-300">
-                    {project.personal.implemented.map((i) => (
-                      <li key={i}>{i}</li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-
-              {Array.isArray(project.personal?.learnings) && project.personal.learnings.length > 0 && (
-                <section>
-                  <h3 className="text-lg font-semibold mb-2">What I learned</h3>
-                  <ul className="list-disc list-inside space-y-2 text-slate-300">
-                    {project.personal.learnings.map((l) => (
-                      <li key={l}>{l}</li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-            </div>
+            {Array.isArray(project.technicalDecisions) && project.technicalDecisions.length > 0 && (
+              <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 sticky top-6">
+                <h2 className="text-xl font-semibold mb-4">Technical Decisions</h2>
+                <ul className="space-y-3 text-slate-300 text-sm leading-relaxed">
+                  {project.technicalDecisions.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="text-slate-500 shrink-0">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </aside>
         </div>
-
       </div>
     </div>
   );
 };
 
 export default CaseStudy;
-
