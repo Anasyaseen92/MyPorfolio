@@ -25,6 +25,7 @@ import {
   Clock,
   Briefcase,
   Download,
+  Trophy,
 } from "lucide-react";
 import skills from "./skillsData/skills";
 import Projects from "./components/Projects";
@@ -171,16 +172,16 @@ const App = () => {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-300 mb-6">
-                Software Engineer
+                Full Stack Engineer
               </p>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-                Full-stack engineer specializing in the MERN stack and Next.js. I build robust,
-                scalable web applications with React, Node, Express, MongoDB,
+                Full-stack engineer specializing in the MERN stack, Next.js, and React Native. I build robust,
+                scalable web and mobile applications with React, Node, Express, MongoDB,
                 and REST/real-time APIs, with production experience in authentication,
-                payments (Stripe/PayPal), and performance. I have solved 100+ LeetCode problems,
-                bringing strong data structures and algorithms thinking to system design and implementation.
-                As an AI Reasoning Engineer at Turing, I build reasoning-centric agents, tool-use workflows,
-                and pragmatic evals for reliable, production-ready LLM features.
+                payments (Stripe/PayPal), and performance. I actively practice DSA on LeetCode with a strong problem-solving track record
+                and competed in ICPC 2025, advancing to the onsite round. That foundation in data structures and algorithms
+                shapes my system design and implementation. Currently an open source contributor. Previously an AI Reasoning Engineer at Turing,
+                building reasoning-centric agents, tool-use workflows, and pragmatic evals for production-ready LLM features.
               </p>
             </div>
 
@@ -251,19 +252,19 @@ const App = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">
-                  Full Stack Software Engineer • AI Reasoning Engineer
+                  Full Stack Engineer • Open Source Contributor
                 </h3>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  Full‑stack engineer focused on building production‑grade web applications across the MERN stack and Next.js. I design and deliver features end‑to‑end, from clean UX to scalable APIs and data models, optimized for performance and reliability.
+                  Full‑stack engineer focused on building production‑grade web and mobile applications across the MERN stack, Next.js, and React Native. I design and deliver features end‑to‑end, from clean UX to scalable APIs and data models, optimized for performance and reliability.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching.
+                  My expertise includes React/Next.js, React Native, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching. I am currently contributing to open source.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  As an AI Reasoning Engineer at @Turing, I design and evaluate reasoning‑centric agents and workflows, building reliable tool‑use, retrieval, and multi‑step planning, writing evals to measure correctness and robustness, and shipping LLM features that are safe, predictable, and production‑ready.
+                  Previously, as an AI Reasoning Engineer at Turing (through Jan 2026), I designed and evaluated reasoning‑centric agents and workflows, building reliable tool‑use, retrieval, and multi‑step planning, and shipping LLM features that are safe, predictable, and production‑ready.
                 </p>
                 <p className="text-slate-300 mb-8 leading-relaxed">
-                  I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, and a social app reflect my practical approach. I’ve solved 100+ LeetCode problems, strengthening my data‑structures and algorithms mindset for everyday engineering.
+                  I enjoy solving complex problems and shipping business value fast. Projects like a multi‑vendor marketplace, a real‑estate platform, an LMS, and a social app reflect my practical approach. I actively practice data structures and algorithms on LeetCode with a strong solve count and participated in ICPC 2025, reaching the onsite round—this DSA journey strengthens my problem‑solving and system design in everyday engineering.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -305,6 +306,17 @@ const App = () => {
                         Grade: A+ | Aug 2021 - Aug 2023
                       </p>
                     </div>
+                  </div>
+                </div>
+
+                <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <Trophy className="text-amber-400" size={20} />
+                    DSA & Competitive Programming
+                  </h4>
+                  <div className="space-y-3 text-slate-300 text-sm leading-relaxed">
+                    <p>Active LeetCode practice with a strong problem-solving track record.</p>
+                    <p><span className="text-blue-400 font-medium">ICPC 2025</span> — Advanced to the onsite round.</p>
                   </div>
                 </div>
 
@@ -376,6 +388,7 @@ const App = () => {
                     "C++": () => dev("devicon-cplusplus-plain colored"),
                     // Frontend
                     "React.js": () => dev("devicon-react-original colored"),
+                    "React Native": () => dev("devicon-react-original colored"),
                     "Next.js": () => dev("devicon-nextjs-original"),
                     "Redux Toolkit": () => dev("devicon-redux-original colored"),
                     "Material UI": () => dev("devicon-materialui-plain colored"),
@@ -491,11 +504,11 @@ const App = () => {
                     </div>
                   </div>
                   <div className="text-slate-400 text-sm whitespace-nowrap">
-                    Oct 2025 — Present
+                    Oct 2025 — Jan 25, 2026
                   </div>
                 </div>
                 <p className="text-slate-300 mt-4 leading-relaxed">
-                I build reasoning-centric agents, tool-use workflows, and pragmatic evals for reliable, production-ready LLM features.
+                Built reasoning-centric agents, tool-use workflows, and pragmatic evals for reliable, production-ready LLM features.
                 </p>
                 
                 <button
@@ -525,6 +538,24 @@ const App = () => {
                     <li>Collaborated with AI research teams to refine evaluation metrics, improve data quality, and support continuous model improvement.</li>
                   </ul>
                 )}
+              </div>
+
+              <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-start gap-3">
+                    <Briefcase className="text-blue-400 mt-1 flex-shrink-0" size={22} />
+                    <div>
+                      <h3 className="text-xl font-semibold">Open Source Contributor</h3>
+                      <p className="text-slate-300">Open Source</p>
+                    </div>
+                  </div>
+                  <div className="text-slate-400 text-sm whitespace-nowrap">
+                    2026 — Present
+                  </div>
+                </div>
+                <p className="text-slate-300 mt-4 leading-relaxed">
+                  Contributing to open source projects—collaborating with maintainers, shipping features, and engaging with the community.
+                </p>
               </div>
             </div>
           </div>

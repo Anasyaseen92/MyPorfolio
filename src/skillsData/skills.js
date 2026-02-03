@@ -7,6 +7,7 @@ const skills = {
   ],
   "Frontend Development": [
     "React.js",
+    "React Native",
     "Next.js",
     "Redux Toolkit",
     "Material UI",
