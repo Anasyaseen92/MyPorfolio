@@ -2,6 +2,7 @@ const skills = {
   "Programming Languages": [
     "JavaScript",
     "TypeScript",
+    "Python",
     "Java",
     "C++"
   ],
@@ -24,14 +25,27 @@ const skills = {
     "SQL",
     "MongoDB"
   ],
-  "Tools & Platforms": [
+  "DevOps & Cloud": [
+    "AWS",
+    "Docker",
+    "CI/CD",
     "Git & GitHub",
+    "Netlify",
+    "Vercel"
+  ],
+  "AI & Machine Learning": [
+    "LLMs",
+    "RAG",
+    "LangChain",
+    "Hugging Face",
+    "LangGraph",
+    "Embeddings & Semantic Search"
+  ],
+  "Tools & Platforms": [
     "Postman",
     "Firebase",
     "Supabase",
     "Cloudinary",
-    "Netlify",
-    "Vercel",
     "Stripe",
     "PayPal"
   ],

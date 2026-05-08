@@ -26,6 +26,9 @@ import {
   Briefcase,
   Download,
   Trophy,
+  Cpu,
+  GitBranch,
+  Zap,
 } from "lucide-react";
 import skills from "./skillsData/skills";
 import Projects from "./components/Projects";
@@ -175,7 +178,11 @@ const App = () => {
                 Full Stack Engineer
               </p>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-                I am a full-stack engineer. I build web and mobile apps with the MERN stack, Next.js, and React Native. I have worked on real projects from front end to backend and making things run smoothly. I like solving problems and practice DSA on LeetCode; I also competed in ICPC 2025 and made it to the onsite round. Right now I am contributing to open source. Before that I was an AI Reasoning Engineer at Turing, working on agents and tool-use workflows so LLM features could be shipped to production.
+                Full-stack engineer with hands-on experience in MERN stack, Next.js, and React Native with real production experience.
+I have built production apps with payments, real-time features, and role-based auth. On the DevOps side I work with
+AWS, Docker, kubernetes and CI/CD pipelines. On top of that I have done AI coursework covering LLMs, RAG, and
+LangGraph, and got real evaluation experience at Turing. I do open source on the side and I am actively looking for a job
+where I can grow and contribute from day one.
               </p>
             </div>
 
@@ -306,11 +313,23 @@ const App = () => {
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
                   <h4 className="text-xl font-semibold mb-4 flex items-center gap-2">
                     <Trophy className="text-amber-400" size={20} />
-                    DSA & Competitive Programming
+                    Achievements
                   </h4>
                   <div className="space-y-3 text-slate-300 text-sm leading-relaxed">
-                    <p>Active LeetCode practice with a strong problem-solving track record.</p>
-                    <p><span className="text-blue-400 font-medium">ICPC 2025</span> — Advanced to the onsite round.</p>
+                    <div className="flex items-start gap-2">
+                      <span className="text-amber-400 font-bold mt-0.5">🏆</span>
+                      <div>
+                        <p className="font-semibold text-white">ICPC Regional Qualifier 2025-26</p>
+                        <p>All Pakistan Rank <span className="text-blue-400 font-semibold">#61</span> — Prelims (Nov 2025)</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-blue-400 font-bold mt-0.5">💻</span>
+                      <div>
+                        <p className="font-semibold text-white">LeetCode</p>
+                        <p>Active competitive programmer with consistent DSA practice.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -348,19 +367,21 @@ const App = () => {
                   "Programming Languages": (
                     <Code className="text-yellow-400" size={24} />
                   ),
-
                   "Frontend Development": (
                     <Globe className="text-blue-400" size={24} />
                   ),
-
                   "Backend & Databases": (
                     <Database className="text-emerald-400" size={24} />
                   ),
-
+                  "DevOps & Cloud": (
+                    <Cloud className="text-sky-400" size={24} />
+                  ),
+                  "AI & Machine Learning": (
+                    <Brain className="text-purple-400" size={24} />
+                  ),
                   "Tools & Platforms": (
                     <Settings className="text-gray-400" size={24} />
                   ),
-
                   "Soft Skills": <Users className="text-pink-400" size={24} />,
                 };
 
@@ -435,6 +456,19 @@ const App = () => {
                         "PayPal"
                       ),
                     "Socket.io": () => dev("devicon-socketio-original"),
+                    // DevOps & Cloud
+                    "AWS": () => img("https://cdn.simpleicons.org/amazonwebservices/FF9900", "AWS"),
+                    "Docker": () => dev("devicon-docker-plain colored"),
+                    "CI/CD": () => <GitBranch className="text-green-400" size={20} />,
+                    // AI & ML
+                    "LLMs": () => <Brain className="text-purple-400" size={20} />,
+                    "RAG": () => <Zap className="text-yellow-400" size={20} />,
+                    "LangChain": () => img("https://cdn.simpleicons.org/langchain/1C3C3C", "LangChain"),
+                    "Hugging Face": () => img("https://huggingface.co/front/assets/huggingface_logo-noborder.svg", "Hugging Face"),
+                    "LangGraph": () => <Cpu className="text-purple-300" size={20} />,
+                    "Embeddings & Semantic Search": () => <Database className="text-indigo-400" size={20} />,
+                    // Python
+                    "Python": () => dev("devicon-python-plain colored"),
                     // Soft skills
                     "Communication": () => <MessageSquare className="text-slate-300" size={20} />,
                     "Team Collaboration": () => <Users className="text-slate-300" size={20} />,
@@ -498,7 +532,7 @@ const App = () => {
                     </div>
                   </div>
                   <div className="text-slate-400 text-sm whitespace-nowrap">
-                    Oct 2025 — Jan 25, 2026
+                    Oct 2025 — Mar 2026
                   </div>
                 </div>
                 <p className="text-slate-300 mt-4 leading-relaxed">
@@ -537,10 +571,10 @@ const App = () => {
               <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-3">
-                    <Briefcase className="text-blue-400 mt-1 flex-shrink-0" size={22} />
+                    <Github className="text-blue-400 mt-1 flex-shrink-0" size={22} />
                     <div>
                       <h3 className="text-xl font-semibold">Open Source Contributor</h3>
-                      <p className="text-slate-300">Open Source</p>
+                      <p className="text-slate-300">Rein — TypeScript & React Remote Desktop App</p>
                     </div>
                   </div>
                   <div className="text-slate-400 text-sm whitespace-nowrap">
@@ -548,8 +582,13 @@ const App = () => {
                   </div>
                 </div>
                 <p className="text-slate-300 mt-4 leading-relaxed">
-                  Contributing to open source projects—collaborating with maintainers, shipping features, and engaging with the community.
+                  Contributing to <span className="text-blue-400 font-medium">Rein</span>, a TypeScript and React based remote desktop control application.
                 </p>
+                <ul className="mt-3 space-y-1.5 text-slate-300 text-sm list-disc list-inside pl-2">
+                  <li>Fixed server crashes by adding WebSocket payload validation and input sanitization.</li>
+                  <li>Built dark/light theme switching and improved the special keys UI.</li>
+                  <li>Extended key mappings and fixed keyboard input handling for voice and glide typing.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -753,7 +792,7 @@ const App = () => {
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-slate-700">
           <div className="max-w-7xl mx-auto text-center text-slate-400">
-            <p>&copy; 2025 Ali Shair. All rights reserved.</p>
+            <p>&copy; 2026 Ali Shair. All rights reserved.</p>
           </div>
         </footer>
       </div>
