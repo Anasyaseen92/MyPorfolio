@@ -28,18 +28,11 @@ const skills = {
   "DevOps & Cloud": [
     "AWS",
     "Docker",
+    "Kubernetes",
     "CI/CD",
     "Git & GitHub",
     "Netlify",
     "Vercel"
-  ],
-  "AI & Machine Learning": [
-    "LLMs",
-    "RAG",
-    "LangChain",
-    "Hugging Face",
-    "LangGraph",
-    "Embeddings & Semantic Search"
   ],
   "Tools & Platforms": [
     "Postman",

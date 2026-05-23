@@ -99,7 +99,7 @@ const App = () => {
               onClick={() => scrollToSection("home")}
               className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:scale-105 transition-transform cursor-pointer"
             >
-              Ali Shair
+              Muhammad Anas Yasin
             </button>
 
             {/* Desktop Menu */}
@@ -158,62 +158,50 @@ const App = () => {
         {/* Hero Section */}
         <section
           id="home"
-          className="min-h-screen flex items-center justify-center px-4 scroll-mt-24 md:scroll-mt-28"
+          className="min-h-screen flex items-center justify-center px-4 pt-10 md:pt-16 scroll-mt-24 md:scroll-mt-28"
         >
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-8">
               <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/*<span className="text-4xl font-bold">AS</span> */}
                 <img
-                  src="https://res.cloudinary.com/dqf4fxp4x/image/upload/v1758367637/avatars/zwftjwbgaqfn2adzcp02.png"
+                  src="https://res.cloudinary.com/dcmgd4gdj/image/upload/v1779572670/Myself_j3gmxu.jpg"
                   className="object-cover w-full h-full rounded-full"
                 />
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  Ali Shair
+                Muhammad Anas Yasin
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-300 mb-6">
-                Full Stack Engineer
+                Software Engineer
               </p>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-                Full-stack engineer with hands-on experience in MERN stack, Next.js, and React Native with real production experience.
-I have built production apps with payments, real-time features, and role-based auth. On the DevOps side I work with
-AWS, Docker, kubernetes and CI/CD pipelines. On top of that I have done AI coursework covering LLMs, RAG, and
-LangGraph, and got real evaluation experience at Turing. I do open source on the side and I am actively looking for a job
-where I can grow and contribute from day one.
+                Software Engineer with hands-on experience in MERN stack, Next.js, and React Native.
+                I have built applications featuring payments, real-time functionality, role-based authentication, and microservices architecture. On the infrastructure side, I work with Docker and CI/CD pipelines for deployment and scaling. I also contribute to open source and continuously build real-world projects. I am actively looking for a role where I can grow and contribute from day one.
               </p>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <a
-                onClick={() => scrollToSection("contact")}
-                className="cursor-pointer flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
-              >
-                <Mail size={20} />
-                Get In Touch
-              </a>
-              <button
-                onClick={() => scrollToSection("projects")}
-                className=" cursor-pointer flex items-center gap-2 border border-slate-600 hover:border-slate-500 px-6 py-3 rounded-lg transition-colors"
-              >
-                View Projects
-                <ExternalLink size={20} />
-              </button>
-              <a
-                href="/resume.pdf"
-                download="Ali_Shair_Resume.pdf"
-                className="flex items-center gap-2 border border-blue-600 text-blue-400 hover:bg-blue-600/10 px-6 py-3 rounded-lg transition-colors"
-              >
-                <Download size={20} />
-                Download Resume
-              </a>
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+                <a
+                  onClick={() => scrollToSection("contact")}
+                  className="cursor-pointer flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
+                >
+                  <Mail size={20} />
+                  Get In Touch
+                </a>
+                <a
+                  href="/Anasyaseen92.pdf"
+                  download="Muhammad_Anas_Yasin_Resume.pdf"
+                  className="flex items-center gap-2 border border-blue-600 text-blue-400 hover:bg-blue-600/10 px-6 py-3 rounded-lg transition-colors"
+                >
+                  <Download size={20} />
+                  Download Resume
+                </a>
             </div>
 
             <div className="flex justify-center space-x-6">
               <a
-                href="https://github.com/alishair7071"
+                href="https://github.com/Anasyaseen92"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors"
@@ -221,7 +209,7 @@ where I can grow and contribute from day one.
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/swe-ali-shair/"
+                href="https://www.linkedin.com/in/anas-yasin-821a03304/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors"
@@ -229,7 +217,7 @@ where I can grow and contribute from day one.
                 <Linkedin size={24} />
               </a>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=anasy7148@gmail.com&su=Portfolio%20Inquiry"
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="text-slate-400 hover:text-white transition-colors"
@@ -238,9 +226,10 @@ where I can grow and contribute from day one.
               </a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* About Section */}
+      {/* About Section */}
         <section id="about" className="py-20 px-4 scroll-mt-24 md:scroll-mt-28">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-16">
@@ -253,13 +242,13 @@ where I can grow and contribute from day one.
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">
-                  Full Stack Engineer • Open Source Contributor
+                  Software Engineer • Open Source Contributor
                 </h3>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  Full‑stack engineer focused on building production‑grade web and mobile applications across the MERN stack, Next.js, and React Native. I design and deliver features end‑to‑end, from clean UX to scalable APIs and data models, optimized for performance and reliability.
+                  Software Engineer focused on building production‑grade web and mobile applications across the MERN stack, Next.js, and React Native. I design and deliver features end‑to‑end, from clean UX to scalable APIs and data models, optimized for performance and reliability.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  My expertise includes React/Next.js, React Native, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching. I am currently contributing to open source.
+                  My expertise includes React/Next.js, Redux Toolkit, Node.js, Express.js, MongoDB, Tailwind CSS, and real‑time communication with Socket.io. I have integrated secure payments (Stripe/PayPal), implemented role‑based access, and improved performance with pragmatic profiling and caching. I am currently contributing to open source.
                 </p>
                 <p className="text-slate-300 mb-6 leading-relaxed">
                   Previously, as an AI Reasoning Engineer at Turing, I designed and evaluated reasoning‑centric agents and workflows, building reliable tool‑use, retrieval, and multi‑step planning, and shipping LLM features that are safe, predictable, and production‑ready.
@@ -275,7 +264,7 @@ where I can grow and contribute from day one.
                   </div>
                   <div className="flex items-center gap-2 text-slate-300">
                     <Phone size={16} className="text-blue-400" />
-                    +923007071587
+                    +923404578775
                   </div>
                 </div>
               </div>
@@ -295,14 +284,14 @@ where I can grow and contribute from day one.
                         University of Education, Lahore
                       </p>
                       <p className="text-slate-400 text-sm">
-                        CGPA: 3.4+ | Aug 2023 - Present
+                        CGPA: 3.2+ | Aug 2023 - Present
                       </p>
                     </div>
                     <div>
                       <h5 className="font-semibold text-blue-400">
                         Intermediate - ICS
                       </h5>
-                      <p className="text-slate-300">Superior Group of Colleges</p>
+                      <p className="text-slate-300">Aspire College Hafizabad</p>
                       <p className="text-slate-400 text-sm">
                         Grade: A+ | Aug 2021 - Aug 2023
                       </p>
@@ -320,7 +309,7 @@ where I can grow and contribute from day one.
                       <span className="text-amber-400 font-bold mt-0.5">🏆</span>
                       <div>
                         <p className="font-semibold text-white">ICPC Regional Qualifier 2025-26</p>
-                        <p>All Pakistan Rank <span className="text-blue-400 font-semibold">#61</span> — Prelims (Nov 2025)</p>
+                        <p>All Pakistan Rank <span className="text-blue-400 font-semibold">#50</span> — Prelims (Nov 2025)</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
@@ -376,9 +365,6 @@ where I can grow and contribute from day one.
                   "DevOps & Cloud": (
                     <Cloud className="text-sky-400" size={24} />
                   ),
-                  "AI & Machine Learning": (
-                    <Brain className="text-purple-400" size={24} />
-                  ),
                   "Tools & Platforms": (
                     <Settings className="text-gray-400" size={24} />
                   ),
@@ -399,7 +385,6 @@ where I can grow and contribute from day one.
                     // Programming Languages
                     "JavaScript": () => dev("devicon-javascript-plain colored"),
                     "TypeScript": () => dev("devicon-typescript-plain colored"),
-                    "Java": () => dev("devicon-java-plain colored"),
                     "C++": () => dev("devicon-cplusplus-plain colored"),
                     // Frontend
                     "React.js": () => dev("devicon-react-original colored"),
@@ -457,18 +442,10 @@ where I can grow and contribute from day one.
                       ),
                     "Socket.io": () => dev("devicon-socketio-original"),
                     // DevOps & Cloud
-                    "AWS": () => img("https://cdn.simpleicons.org/amazonwebservices/FF9900", "AWS"),
+                    "AWS": () => dev("devicon-amazonwebservices-plain colored"),
                     "Docker": () => dev("devicon-docker-plain colored"),
+                    "Kubernetes": () => dev("devicon-kubernetes-plain colored"),
                     "CI/CD": () => <GitBranch className="text-green-400" size={20} />,
-                    // AI & ML
-                    "LLMs": () => <Brain className="text-purple-400" size={20} />,
-                    "RAG": () => <Zap className="text-yellow-400" size={20} />,
-                    "LangChain": () => img("https://cdn.simpleicons.org/langchain/1C3C3C", "LangChain"),
-                    "Hugging Face": () => img("https://huggingface.co/front/assets/huggingface_logo-noborder.svg", "Hugging Face"),
-                    "LangGraph": () => <Cpu className="text-purple-300" size={20} />,
-                    "Embeddings & Semantic Search": () => <Database className="text-indigo-400" size={20} />,
-                    // Python
-                    "Python": () => dev("devicon-python-plain colored"),
                     // Soft skills
                     "Communication": () => <MessageSquare className="text-slate-300" size={20} />,
                     "Team Collaboration": () => <Users className="text-slate-300" size={20} />,
@@ -571,23 +548,23 @@ where I can grow and contribute from day one.
               <div className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-3">
-                    <Github className="text-blue-400 mt-1 flex-shrink-0" size={22} />
+                    <Briefcase className="text-blue-400 mt-1 flex-shrink-0" size={22} />
                     <div>
-                      <h3 className="text-xl font-semibold">Open Source Contributor</h3>
-                      <p className="text-slate-300">Rein — TypeScript & React Remote Desktop App</p>
+                      <h3 className="text-xl font-semibold">DevWeekends Mentor</h3>
+                      <p className="text-slate-300">Community Mentorship & Developer Training</p>
                     </div>
                   </div>
                   <div className="text-slate-400 text-sm whitespace-nowrap">
-                    2026 — Present
+                    2025 — Present
                   </div>
                 </div>
                 <p className="text-slate-300 mt-4 leading-relaxed">
-                  Contributing to <span className="text-blue-400 font-medium">Rein</span>, a TypeScript and React based remote desktop control application.
+                  Mentored and guided aspiring developers through free community-based training programs with a strong focus on growth mindset, problem solving, and software engineering fundamentals.
                 </p>
                 <ul className="mt-3 space-y-1.5 text-slate-300 text-sm list-disc list-inside pl-2">
-                  <li>Fixed server crashes by adding WebSocket payload validation and input sanitization.</li>
-                  <li>Built dark/light theme switching and improved the special keys UI.</li>
-                  <li>Extended key mappings and fixed keyboard input handling for voice and glide typing.</li>
+                  <li>Trained students across the complete development journey, covering MERN stack development, cloud technologies, DevOps fundamentals, and modern software engineering practices.</li>
+                  <li>Helped learners build real-world projects and improve technical confidence through hands-on guidance and code reviews.</li>
+                  <li>Encouraged growth mindset development and practical problem-solving techniques in a collaborative learning environment.</li>
                 </ul>
               </div>
             </div>
@@ -616,12 +593,12 @@ where I can grow and contribute from day one.
                 <Mail className="text-blue-400 mx-auto mb-4" size={32} />
                 <h3 className="text-lg font-semibold mb-2">Email</h3>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=alishair7071@gmail.com&su=Portfolio%20Inquiry"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=anasy7148@gmail.com&su=Portfolio%20Inquiry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-300 hover:text-blue-400 transition-colors"
                 >
-                  alishair7071@gmail.com
+                  anasy7148@gmail.com
                 </a>
               </div>
 
@@ -632,7 +609,7 @@ where I can grow and contribute from day one.
                   href="tel:03007071587"
                   className="text-slate-300 hover:text-blue-400 transition-colors"
                 >
-                  03007071587
+                  03404578775
                 </a>
               </div>
 
@@ -661,9 +638,11 @@ where I can grow and contribute from day one.
                       {
                         from_name: contactName,
                         from_email: contactEmail,
+                        sender_name: contactName,
+                        sender_email: contactEmail,
                         reply_to: contactEmail,
                         subject: contactSubject,
-                        message: contactMessage,
+                        message: `Sender Name: ${contactName}\nSender Email: ${contactEmail}\n\n${contactMessage}`,
                       },
                       { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
                     );
@@ -762,7 +741,7 @@ where I can grow and contribute from day one.
 
             <div className="flex justify-center space-x-6">
               <a
-                href="https://github.com/alishair7071"
+                href="https://github.com/Anasyaseen92"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 p-4 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors"
@@ -770,7 +749,7 @@ where I can grow and contribute from day one.
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/swe-ali-shair/"
+                href="https://www.linkedin.com/in/anas-yasin-821a03304/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 p-4 rounded-lg border border-slate-700 hover:border-slate-600 transition-colors"
@@ -792,7 +771,7 @@ where I can grow and contribute from day one.
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-slate-700">
           <div className="max-w-7xl mx-auto text-center text-slate-400">
-            <p>&copy; 2026 Ali Shair. All rights reserved.</p>
+            <p>&copy; 2026 Muhammad Anas Yasin. All rights reserved.</p>
           </div>
         </footer>
       </div>

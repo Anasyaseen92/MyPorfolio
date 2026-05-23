@@ -13,8 +13,8 @@ const projects = [
     ],
     tech: ['Next.js', 'TypeScript', 'React', 'Redux Toolkit', 'RTK Query', 'NextAuth', 'Tailwind CSS', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'Redis', 'Socket.io', 'Stripe', 'Cloudinary'],
     link: 'https://lms-client-1ofg.vercel.app/',
-    sourceCodeLink: 'https://github.com/alishair7071/LMS',
-    readmeLink: 'https://github.com/alishair7071/LMS/blob/main/README.md',
+    sourceCodeLink: 'https://github.com/Anasyaseen92/LMS-',
+    readmeLink: 'https://github.com/Anasyaseen92/LMS-/tree/main#complete-case-study---lms',
     gradient: 'from-amber-600 to-orange-600',
     caseStudy: {
       overview: 'LMS is a full-stack Learning Management System built with Next.js (TypeScript) on the frontend and Node.js/Express (TypeScript) on the backend. It provides RESTful APIs for courses, authentication, enrollment, Stripe payments, content delivery, and analytics. The system supports multi-role users, video-based learning, Q&A, reviews, and real-time admin notifications.',
@@ -50,10 +50,10 @@ const projects = [
       'Stripe & PayPal with webhook verification',
       'Role-based access (Customer, Seller, Admin) with JWT'
     ],
-    tech: ['React.js', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Stripe', 'PayPal'],
-    link: 'https://frontend-multivendor.netlify.app/',
-    sourceCodeLink: 'https://github.com/alishair7071/Multivendor',
-    readmeLink: 'https://github.com/alishair7071/Multivendor/blob/main/README.md',
+    tech: ['React.jsS', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Stripe', 'PayPal'],
+    link: 'https://mv92.netlify.app/shop-create',
+    sourceCodeLink: 'https://github.com/Anasyaseen92/Multi-vendor-ecommerce-',
+    readmeLink: 'https://github.com/Anasyaseen92/Multi-vendor-ecommerce-#multivendor-e-commerce-platform-mern-stack',
     gradient: 'from-blue-600 to-purple-600',
     caseStudy: {
       overview: 'Shop Nest is a full-stack multivendor marketplace inspired by platforms like Amazon and Daraz. Multiple sellers list and manage products; customers browse, purchase, and pay securely. An admin panel controls seller approval and platform oversight.',
@@ -89,9 +89,9 @@ const projects = [
       'Profile management: avatar, username, email, password; view own listings'
     ],
     tech: ['React', 'Vite', 'Redux Toolkit', 'Tailwind CSS', 'Swiper', 'Node.js', 'Express', 'MongoDB', 'Firebase Auth', 'Supabase'],
-    link: 'https://mern-estate-frontend.netlify.app/',
-    sourceCodeLink: 'https://github.com/alishair7071/real-estate',
-    readmeLink: 'https://github.com/alishair7071/real-estate/blob/main/README.md',
+    link: 'https://mern-estate-fronten.netlify.app/',
+    sourceCodeLink: 'https://github.com/Anasyaseen92/mern-estate',
+    readmeLink: 'https://github.com/Anasyaseen92/mern-estate#readme',
     gradient: 'from-green-600 to-teal-600',
     caseStudy: {
       overview: 'A real-estate listing portal where authenticated users post properties for sale or rent and visitors browse and search. Built with MERN plus Firebase (Google sign-in) and Supabase for image storage, simulating features found on Zillow or Realtor.com.',
@@ -127,9 +127,9 @@ const projects = [
       'RESTful API with MongoDB; Material UI components'
     ],
     tech: ['React', 'Redux Toolkit', 'Material UI', 'Node.js', 'Express', 'MongoDB'],
-    link: 'https://sociopedia-front-end.netlify.app/',
-    sourceCodeLink: 'https://github.com/alishair7071/Sociopedia',
-    readmeLink: 'https://github.com/alishair7071/Sociopedia/blob/main/README.md',
+    link: 'https://socialmediafo.netlify.app/',
+    sourceCodeLink: 'https://github.com/Anasyaseen92/social_media',
+    readmeLink: '',
     gradient: 'from-pink-600 to-red-600',
     caseStudy: {
       overview: 'Sociopedia is a lightweight social app focused on content and connections. Users post updates, like and comment, and manage friend relationships. The UI is built with Material UI for a consistent, professional look.',
