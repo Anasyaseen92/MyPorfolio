@@ -606,7 +606,7 @@ const App = () => {
                 <Phone className="text-blue-400 mx-auto mb-4" size={32} />
                 <h3 className="text-lg font-semibold mb-2">Phone</h3>
                 <a
-                  href="tel:03007071587"
+                  href="tel:03404578775"
                   className="text-slate-300 hover:text-blue-400 transition-colors"
                 >
                   03404578775
